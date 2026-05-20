@@ -1074,7 +1074,25 @@
     transition: background 0.12s ease, transform 0.12s ease, color 0.12s;
   }
   .btn-outline:hover { background: rgba(240,165,0,0.04); color: var(--amber); transform: translateY(-2px); }
-
+  .btn-resume {
+    display: inline-block;
+    padding: 0.65rem 1rem;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid var(--amber);
+    transition: background 0.12s ease, color 0.12s ease, transform 0.12s ease;
+  }
+  .btn-resume:hover {
+    background: var(--amber);
+    color: var(--navy);
+    transform: translateY(-2px);
+  }
   /* responsive */
   @media (max-width: 768px) {
     .hero-bubbles { justify-content: flex-start; }
@@ -1122,6 +1140,7 @@
     </div>
 
     <div class="hero-cta">
+      <a href="Bhumika_Bharadwaj_Resume.pdf" class="btn-resume" target="_blank" rel="noopener noreferrer" aria-label="Open resume in new tab">Resume</a>
       <a href="#projects" class="btn-primary">View Projects</a>
       <a href="#contact" class="btn-outline">Get in Touch</a>
     </div>
